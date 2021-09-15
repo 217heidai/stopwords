@@ -14,7 +14,7 @@ from pypinyin import Style, pinyin
 class StopWordsRepo(object):
     def __init__(self, name, filename, url):
         self.name = name
-        self.filename = './stopwords/' + filename
+        self.filename = os.getcwd() + '/stopwords/' + filename
         self.url = url
 
 class Updater(object):
@@ -130,17 +130,17 @@ def merge(stopWordsRepoList):
 
 def run():
     stopWordsRepoList = []
-    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'goto456_cn_stopwords.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/goto456/stopwords/master/cn_stopwords.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'哈工大停用词表', 'goto456_hit_stopwords.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/goto456/stopwords/master/hit_stopwords.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'百度停用词表', 'goto456_baidu_stopwords.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/goto456/stopwords/master/baidu_stopwords.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'四川大学机器智能实验室停用词库', 'goto456_scu_stopwords.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/goto456/stopwords/master/scu_stopwords.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'elephantnose_stop_words', 'https://ghproxy.com/https://raw.githubusercontent.com/elephantnose/characters/master/stop_words'))
-    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'ImportMe_chinese.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/ImportMe/stop_words/master/chinese.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'英文停用词表', 'ImportMe_english.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/ImportMe/stop_words/master/english.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'停用词表', 'nishiwen1214_stop_words.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/stop_words.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'停用词表1205', 'nishiwen1214_停用词表1205.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1205.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'停用词表1893', 'nishiwen1214_停用词表1893.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1893.txt'))
-    stopWordsRepoList.append(StopWordsRepo(f'停用词表2462', 'nishiwen1214_停用词表2462.txt', 'https://ghproxy.com/https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表2462.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'goto456_cn_stopwords.txt', 'https://raw.githubusercontent.com/goto456/stopwords/master/cn_stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'哈工大停用词表', 'goto456_hit_stopwords.txt', 'https://raw.githubusercontent.com/goto456/stopwords/master/hit_stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'百度停用词表', 'goto456_baidu_stopwords.txt', 'https://raw.githubusercontent.com/goto456/stopwords/master/baidu_stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'四川大学机器智能实验室停用词库', 'goto456_scu_stopwords.txt', 'https://raw.githubusercontent.com/goto456/stopwords/master/scu_stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'elephantnose_stop_words', 'https://raw.githubusercontent.com/elephantnose/characters/master/stop_words'))
+    stopWordsRepoList.append(StopWordsRepo(f'中文停用词表', 'ImportMe_chinese.txt', 'https://raw.githubusercontent.com/ImportMe/stop_words/master/chinese.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'英文停用词表', 'ImportMe_english.txt', 'https://raw.githubusercontent.com/ImportMe/stop_words/master/english.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'停用词表', 'nishiwen1214_stop_words.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/stop_words.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'停用词表1205', 'nishiwen1214_停用词表1205.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1205.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'停用词表1893', 'nishiwen1214_停用词表1893.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1893.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'停用词表2462', 'nishiwen1214_停用词表2462.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表2462.txt'))
 
     isNeedUpdate = 0
     for stopWordsRepo in stopWordsRepoList:
