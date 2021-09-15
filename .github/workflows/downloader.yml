@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --pre gql[all]
           pip install requests
-          pip instal pypinyin
+          pip install pypinyin
       - name: Download Stop Words
         run: python stopwords.py
 
