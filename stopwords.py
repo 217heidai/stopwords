@@ -34,6 +34,8 @@ class Updater(object):
 
     def Download(self):
         try:
+            if not os.path.exists(os.getcwd() + '/stopwords'):
+                os.mkdir(os.getcwd() + '/stopwords')
             isNeedUpdate = False
             if os.path.exists(self.filename_download):
                 os.remove(self.filename_download)
