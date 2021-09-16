@@ -143,6 +143,12 @@ def run():
     stopWordsRepoList.append(StopWordsRepo(f'停用词表1205', 'nishiwen1214_停用词表1205.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1205.txt'))
     stopWordsRepoList.append(StopWordsRepo(f'停用词表1893', 'nishiwen1214_停用词表1893.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表1893.txt'))
     stopWordsRepoList.append(StopWordsRepo(f'停用词表2462', 'nishiwen1214_停用词表2462.txt', 'https://raw.githubusercontent.com/nishiwen1214/NLP-Dictionary/master/停用词表2462.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'中文停用词，标点符号-已分词', 'lighting66ban_中文停用词，标点符号-已分词.txt', 'https://raw.githubusercontent.com/lighting66ban/stop-word/master/中文停用词，标点符号-已分词.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'中英文与中文版有重叠stopwords-2.6K', 'lighting66ban_中英文与中文版有重叠stopwords-2.6K.txt', 'https://raw.githubusercontent.com/lighting66ban/stop-word/master/中英文与中文版有重叠stopwords-2.6K.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'常用英文停用词(NLP处理英文必备)stopwords', 'lighting66ban_常用英文停用词(NLP处理英文必备)stopwords.txt', 'https://raw.githubusercontent.com/lighting66ban/stop-word/master/常用英文停用词(NLP处理英文必备)stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'stopwords', 'selfcs_stopwords.txt', 'https://raw.githubusercontent.com/selfcs/stop-and-sensitive-words/main/stopwords.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'停用词表', 'eastmountyxz_停用词表.txt', 'https://raw.githubusercontent.com/eastmountyxz/NLP-Custom-Dictionary/master/停用词表.txt'))
+    stopWordsRepoList.append(StopWordsRepo(f'stopwords', 'zhiyou720_stopwords.txt', 'https://raw.githubusercontent.com/zhiyou720/cn_word_tokenizer/main/conf/stopwords.txt'))
 
     isNeedUpdate = 0
     for stopWordsRepo in stopWordsRepoList:

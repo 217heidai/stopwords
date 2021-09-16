@@ -8,6 +8,9 @@
 |elephantnose|[characters](https://github.com/elephantnose/characters)|
 |ImportMe|[stop_words](https://github.com/ImportMe/stop_words)|
 |nishiwen1214|[NLP-Dictionary](https://github.com/nishiwen1214/NLP-Dictionary)|
+|lighting66ban|[stop-word](https://github.com/lighting66ban/stop-word)|
+|selfcs|[stop-and-sensitive-words](https://github.com/selfcs/stop-and-sensitive-words)|
+|eastmountyxz|[NLP-Custom-Dictionary](https://github.com/eastmountyxz/NLP-Custom-Dictionary)|
 
 # 文件下载
 
