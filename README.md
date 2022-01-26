@@ -7,7 +7,6 @@
 |eastmountyxz|[NLP-Custom-Dictionary](https://github.com/eastmountyxz/NLP-Custom-Dictionary)|
 |elephantnose|[characters](https://github.com/elephantnose/characters)|
 |goto456|[stopwords](https://github.com/goto456/stopwords)|
-|ImportMe|[stop_words](https://github.com/ImportMe/stop_words)|
 |lighting66ban|[stop-word](https://github.com/lighting66ban/stop-word)|
 |nishiwen1214|[NLP-Dictionary](https://github.com/nishiwen1214/NLP-Dictionary)|
 |selfcs|[stop-and-sensitive-words](https://github.com/selfcs/stop-and-sensitive-words)|
